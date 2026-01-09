@@ -11,14 +11,22 @@ const communityLinks = links.community;
 ---
 
 <style>
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-width: 22rem;
+    width: 100%;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.4rem;
 
     width: 100%;
-    max-width: 10rem;
 
     list-style-type: none;
     padding: 0;
@@ -27,84 +35,208 @@ const communityLinks = links.community;
   li {
     width: 100%;
   }
+
+  h1 {
+    font-family: 'Montserrat', sans-seriff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 4rem;
+    letter-spacing: 0.4ch;
+
+    margin: 0;
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.8ch;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+
+    width: 100%;
+
+    margin: 0;
+    margin-bottom: 1.6rem;
+  }
+
+  h3 > .link-group-header-icon {
+    font-size: 2.6rem;
+  }
+
+  h3 > .link-group-header-label {
+    position: relative;
+    margin-inline: auto;
+    left: -1rem;
+  }
+
+  div.link-group {
+    position: relative;
+
+    padding: 1rem;
+
+    outline: 2px solid var(--clr-surface-0);
+    border-radius: 4pt;
+    overflow: hidden;
+  }
+
+  div.link-group::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+
+    background-color: var(--clr-base);
+    opacity: 0.6;
+    backdrop-filter: blur(12px);
+  }
+
+  div.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  hr.hero-hr {
+    width: 100%;
+
+    border: none;
+
+    background-color: var(--clr-primary);
+    height: 2px;
+
+    margin-block: 1.5rem;
+  }
+
+  div.hero > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
 </style>
 
 <Layout title='Voidtrick'>
-  <h1>Voidtrick</h1>
-  <p>Hello, world.</p>
-  <h3>Social</h3>
-  <ul>
-    {
-      socialLinks.map((link) => (
-        <li>
-          <Link
-            url={link.url}
-            label={link.label}
-            external={link.external}
-            icon={link.icon}
-          />
-        </li>
-      ))
-    }
-  </ul>
-  <h3>Media</h3>
-  <ul>
-    {
-      mediaLinks.map((link) => (
-        <li>
-          <Link
-            url={link.url}
-            label={link.label}
-            external={link.external}
-            icon={link.icon}
-          />
-        </li>
-      ))
-    }
-  </ul>
-  <h3>Development</h3>
-  <ul>
-    {
-      devLinks.map((link) => (
-        <li>
-          <Link
-            url={link.url}
-            label={link.label}
-            external={link.external}
-            icon={link.icon}
-          />
-        </li>
-      ))
-    }
-  </ul>
-  <h3>Community</h3>
-  <ul>
-    {
-      communityLinks.map((link) => (
-        <li>
-          <Link
-            url={link.url}
-            label={link.label}
-            external={link.external}
-            icon={link.icon}
-          />
-        </li>
-      ))
-    }
-  </ul>
-  <h3>Support</h3>
-  <ul>
-    {
-      supportLinks.map((link) => (
-        <li>
-          <Link
-            url={link.url}
-            label={link.label}
-            external={link.external}
-            icon={link.icon}
-          />
-        </li>
-      ))
-    }
-  </ul>
+  <div class='hero'>
+    <h1>Voidtrick</h1>
+    <hr class='hero-hr' />
+    <p>Hello, world.</p>
+  </div>
+  <section>
+    <div class='link-group'>
+      <h3>
+        <i class='link-group-header-icon ri-chat-quote-fill'></i><span
+          class='link-group-header-label'>Social</span
+        >
+      </h3>
+      <ul>
+        {
+          socialLinks.map((link) => (
+            <li>
+              <Link
+                url={link.url}
+                label={link.label}
+                external={link.external}
+                icon={link.icon}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class='link-group'>
+      <h3>
+        <i class='link-group-header-icon ri-movie-2-fill'></i><span
+          class='link-group-header-label'>Media</span
+        >
+      </h3>
+      <ul>
+        {
+          mediaLinks.map((link) => (
+            <li>
+              <Link
+                url={link.url}
+                label={link.label}
+                external={link.external}
+                icon={link.icon}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class='link-group'>
+      <h3>
+        <i class='link-group-header-icon ri-code-box-fill'></i><span
+          class='link-group-header-label'>Development</span
+        >
+      </h3>
+      <ul>
+        {
+          devLinks.map((link) => (
+            <li>
+              <Link
+                url={link.url}
+                label={link.label}
+                external={link.external}
+                icon={link.icon}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class='link-group'>
+      <h3>
+        <i class='link-group-header-icon ri-discuss-fill'></i><span
+          class='link-group-header-label'>Community</span
+        >
+      </h3>
+      <ul>
+        {
+          communityLinks.map((link) => (
+            <li>
+              <Link
+                url={link.url}
+                label={link.label}
+                external={link.external}
+                icon={link.icon}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class='link-group'>
+      <h3>
+        <i class='link-group-header-icon ri-hand-heart-fill'></i><span
+          class='link-group-header-label'>Support</span
+        >
+      </h3>
+      <ul>
+        {
+          supportLinks.map((link) => (
+            <li>
+              <Link
+                url={link.url}
+                label={link.label}
+                external={link.external}
+                icon={link.icon}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
 </Layout>

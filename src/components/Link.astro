@@ -6,7 +6,7 @@ const { url, label, icon, external } = Astro.props;
   a {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 0.75ch;
 
     font-size: 1rem;
@@ -16,7 +16,7 @@ const { url, label, icon, external } = Astro.props;
 
     width: 100%;
 
-    padding-block: 0.6rem;
+    padding-block: 0.5rem;
     padding-inline: 1rem;
 
     margin: 0;
@@ -24,21 +24,39 @@ const { url, label, icon, external } = Astro.props;
     border: none;
 
     background-color: var(--clr-surface-0);
-    outline: 1px solid var(--clr-surface-1);
-    border-radius: 3pt;
+    outline: 2px solid var(--clr-surface-1);
+    border-radius: 999px;
+
+    transition-property: background-color, outline;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
   }
 
   a:hover {
     background-color: var(--clr-surface-1);
-    outline: 1px solid var(--clr-surface-2);
+    outline: 2px solid var(--clr-primary);
+  }
+
+  a:hover > .link-icon {
+    color: var(--clr-primary);
   }
 
   .link-icon {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+
+    transition-property: color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .link-label {
+    position: relative;
+    margin-inline: auto;
+    left: -0.6rem;
   }
 </style>
 
 <a href={url} target={external ? '_blank' : '_self'}>
-  {icon && <span class=`link-icon ${icon}` />}
-  <span>{label}</span>
+  {icon && <span class={`link-icon ${icon}`} />}
+  <span class='link-label'>{label}</span>
 </a>
