@@ -16,8 +16,10 @@ const communityLinks = links.community;
     flex-direction: column;
     gap: 2rem;
 
-    max-width: 22rem;
+    max-width: 26rem;
     width: 100%;
+
+    padding-inline: 1rem;
 
     scroll-padding-block: 4rem;
     scroll-margin-block: 4rem;
@@ -40,10 +42,11 @@ const communityLinks = links.community;
   }
 
   h1 {
+    font-size: 2rem;
+
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 4rem;
     letter-spacing: 0.4ch;
 
     margin: 0;
@@ -56,7 +59,7 @@ const communityLinks = links.community;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.4rem;
 
     width: 100%;
 
@@ -65,7 +68,7 @@ const communityLinks = links.community;
   }
 
   h3 > .link-group-header-icon {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 
   h3 > .link-group-header-label {
@@ -95,8 +98,6 @@ const communityLinks = links.community;
     z-index: -1;
 
     background-color: var(--clr-base);
-    /* opacity: 0.6; */
-    /* backdrop-filter: blur(12px); */
   }
 
   div.hero {
@@ -123,7 +124,7 @@ const communityLinks = links.community;
 
   div.hero > p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1rem;
 
     margin-top: 0;
     margin-bottom: 4rem;
@@ -139,9 +140,9 @@ const communityLinks = links.community;
     width: 100%;
     max-width: 16rem;
 
+    font-size: 1rem;
     color: var(--clr-text);
     text-decoration: none;
-    font-size: 1.2rem;
     font-weight: 600;
 
     padding-block: 0.8rem;
@@ -159,6 +160,28 @@ const communityLinks = links.community;
     background-color: var(--clr-surface-0);
     outline: 2px solid var(--clr-surface-1);
     color: var(--clr-primary);
+  }
+
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 1.75rem;
+    }
+
+    h3 > .link-group-header-icon {
+      font-size: 2.6rem;
+    }
+
+    div.hero > p {
+      font-size: 1.4rem;
+    }
+
+    .btn {
+      font-size: 1.2rem;
+    }
   }
 </style>
 
