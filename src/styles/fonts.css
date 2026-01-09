@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'SN Pro';
+  src: url('/fonts/SNPro/SNPro-Variable.woff2') format('woff2'),
+    url('/fonts/SNPro/SNPro-Variable.woff') format('woff'),
+    url('/fonts/SNPro/SNPro-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('/fonts/SNPro/SNPro-VariableItalic.woff2') format('woff2'),
+    url('/fonts/SNPro/SNPro-VariableItalic.woff') format('woff'),
+    url('/fonts/SNPro/SNPro-VariableItalic.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
