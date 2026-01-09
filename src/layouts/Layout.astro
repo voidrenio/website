@@ -4,6 +4,9 @@ import '@styles/style.css';
 import '@styles/variables.css';
 import '@styles/inter.css';
 import '@styles/montserrat.css';
+import { Image } from 'astro:assets';
+import bgDark from '@assets/images/bg-dark.jpg';
+import bgLight from '@assets/images/bg-light.jpg';
 
 const { title = 'Voidtrick' } = Astro.props;
 ---
@@ -17,6 +20,22 @@ const { title = 'Voidtrick' } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <div class='bg-image-container'>
+      <Image
+        decoding='async'
+        loading='lazy'
+        class='bg-image bg-image-dark'
+        src={bgDark}
+        alt=''
+      />
+      <Image
+        decoding='async'
+        loading='lazy'
+        class='bg-image bg-image-light'
+        src={bgLight}
+        alt=''
+      />
+    </div>
     <main>
       <slot />
     </main>
