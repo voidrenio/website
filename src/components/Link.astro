@@ -1,0 +1,44 @@
+---
+const { url, label, icon, external } = Astro.props;
+---
+
+<style>
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75ch;
+
+    font-size: 1rem;
+    color: var(--clr-text);
+    text-decoration: none;
+    font-weight: 600;
+
+    width: 100%;
+
+    padding-block: 0.6rem;
+    padding-inline: 1rem;
+
+    margin: 0;
+
+    border: none;
+
+    background-color: var(--clr-surface-0);
+    outline: 1px solid var(--clr-surface-1);
+    border-radius: 3pt;
+  }
+
+  a:hover {
+    background-color: var(--clr-surface-1);
+    outline: 1px solid var(--clr-surface-2);
+  }
+
+  .link-icon {
+    font-size: 1.4rem;
+  }
+</style>
+
+<a href={url} target={external ? '_blank' : '_self'}>
+  {icon && <span class=`link-icon ${icon}` />}
+  <span>{label}</span>
+</a>

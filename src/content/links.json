@@ -1,0 +1,16 @@
+{
+  "mainLinks": [
+    {
+      "label": "Github",
+      "url": "https://www.github.com",
+      "icon": "ri-github-fill",
+      "external": true
+    },
+    {
+      "label": "Codeberg",
+      "url": "https://www.codeberg.org",
+      "icon": "ri-git-repository-fill",
+      "external": true
+    }
+  ]
+}
