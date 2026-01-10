@@ -49,6 +49,12 @@
       "url": "https://www.twitch.tv/voidtrickttv",
       "icon": "ri-twitch-fill",
       "external": true
+    },
+    {
+      "label": "Odysee",
+      "url": "https://odysee.com/@voidtrick:e",
+      "icon": "ri-video-fill",
+      "external": true
     }
   ],
   "works": [
@@ -90,6 +96,18 @@
       "label": "Buy Me a Coffee",
       "url": "https://buymeacoffee.com/voidtrick",
       "icon": "ri-cup-fill",
+      "external": true
+    },
+    {
+      "label": "Liberapay",
+      "url": "https://liberapay.com/voidtrick",
+      "icon": "ri-money-dollar-box-fill",
+      "external": true
+    },
+    {
+      "label": "PayPal",
+      "url": "https://www.paypal.biz/voidtrick",
+      "icon": "ri-paypal-fill",
       "external": true
     }
   ],
