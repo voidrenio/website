@@ -60,8 +60,14 @@
   "works": [
     {
       "label": "Itch.io",
-      "url": "https://voidtrick.itch.io/",
+      "url": "https://voidtrick.itch.io",
       "icon": "ri-gamepad-fill",
+      "external": true
+    },
+    {
+      "label": "Gumroad",
+      "url": "https://gumroad.voidtrick.com",
+      "icon": "ri-store-fill",
       "external": true
     }
   ],
