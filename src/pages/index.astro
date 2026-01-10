@@ -3,12 +3,7 @@ import Layout from '@layouts/Layout.astro';
 import links from '@content/links.json';
 import LinkGroup from '@/components/LinkGroup.astro';
 
-const socialLinks = links.social;
-const devLinks = links.dev;
-const mediaLinks = links.media;
-const supportLinks = links.support;
-const communityLinks = links.community;
-const worksLinks = links.works;
+const { linkGroups } = links;
 ---
 
 <style>
@@ -122,15 +117,10 @@ const worksLinks = links.works;
     <a href='#links' class='btn'>View Links</a>
   </div>
   <section id='links'>
-    <LinkGroup label='Social' icon='ri-chat-quote-fill' links={socialLinks} />
-    <LinkGroup label='Media' icon='ri-movie-2-fill' links={mediaLinks} />
-    <LinkGroup label='Works' icon='ri-artboard-fill' links={worksLinks} />
-    <LinkGroup label='Development' icon='ri-code-box-fill' links={devLinks} />
-    <LinkGroup
-      label='Community'
-      icon='ri-user-community-fill'
-      links={communityLinks}
-    />
-    <LinkGroup label='Support' icon='ri-hand-heart-fill' links={supportLinks} />
+    {
+      linkGroups.map((group: any) => (
+        <LinkGroup label={group.label} icon={group.icon} links={group.links} />
+      ))
+    }
   </section>
 </Layout>
