@@ -1,12 +1,6 @@
 {
   "social": [
     {
-      "label": "X/Twitter",
-      "url": "https://x.com/xvoidtrick",
-      "icon": "ri-twitter-x-fill",
-      "external": true
-    },
-    {
       "label": "Mastodon",
       "url": "https://mastodon.social/@voidtrick",
       "icon": "ri-mastodon-fill",
@@ -16,6 +10,12 @@
       "label": "Bluesky",
       "url": "https://bsky.app/profile/voidtrick.net",
       "icon": "ri-bluesky-fill",
+      "external": true
+    },
+    {
+      "label": "X/Twitter",
+      "url": "https://x.com/xvoidtrick",
+      "icon": "ri-twitter-x-fill",
       "external": true
     },
     {
@@ -39,25 +39,27 @@
       "external": true
     },
     {
-      "label": "Twitch",
-      "url": "https://www.twitch.tv/voidtrickttv",
-      "icon": "ri-twitch-fill",
-      "external": true
-    },
-    {
       "label": "TikTok",
       "url": "https://www.tiktok.com/@tt.voidtrick",
       "icon": "ri-tiktok-fill",
       "external": true
+    },
+    {
+      "label": "Twitch",
+      "url": "https://www.twitch.tv/voidtrickttv",
+      "icon": "ri-twitch-fill",
+      "external": true
+    }
+  ],
+  "works": [
+    {
+      "label": "Itch.io",
+      "url": "https://voidtrick.itch.io/",
+      "icon": "ri-gamepad-fill",
+      "external": true
     }
   ],
   "dev": [
-    {
-      "label": "Github",
-      "url": "https://github.com/voidtrick",
-      "icon": "ri-github-fill",
-      "external": true
-    },
     {
       "label": "Codeberg",
       "url": "https://codeberg.org/voidtrick",
@@ -65,9 +67,9 @@
       "external": true
     },
     {
-      "label": "Itch.io",
-      "url": "https://voidtrick.itch.io/",
-      "icon": "ri-gamepad-fill",
+      "label": "Github",
+      "url": "https://github.com/voidtrick",
+      "icon": "ri-github-fill",
       "external": true
     }
   ],
