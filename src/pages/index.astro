@@ -1,9 +1,9 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import links from '@content/links.json';
+import { linkGroups } from '@content/links.ts';
 import LinkGroup from '@/components/LinkGroup.astro';
 
-const { linkGroups } = links;
+// const { linkGroups } = links;
 
 // const enabledLinkGroups = linkGroups.filter((group) => {
 //   group.links.some((link) => link.enabled);
