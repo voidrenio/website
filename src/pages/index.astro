@@ -5,9 +5,16 @@ import LinkGroup from '@/components/LinkGroup.astro';
 
 const { linkGroups } = links;
 
-const enabledLinkGroups = linkGroups.filter((group) => {
-  group.links.some((link) => link.enabled);
-});
+// const enabledLinkGroups = linkGroups.filter((group) => {
+//   group.links.some((link) => link.enabled);
+// });
+
+const enabledLinkGroups = linkGroups
+  .map((group) => ({
+    ...group,
+    links: group.links.filter((link) => link.enabled),
+  }))
+  .filter((group) => group.links.length > 0);
 ---
 
 <style>

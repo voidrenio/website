@@ -9,28 +9,28 @@
           "url": "https://mastodon.social/@voidtrick",
           "icon": "ri-mastodon-fill",
           "external": true,
-          "enabled": true
+          "enabled": false
         },
         {
           "label": "Bluesky",
           "url": "https://bsky.app/profile/voidtrick.net",
           "icon": "ri-bluesky-fill",
           "external": true,
-          "enabled": true
+          "enabled": false
         },
         {
           "label": "X/Twitter",
           "url": "https://x.com/xvoidtrick",
           "icon": "ri-twitter-x-fill",
           "external": true,
-          "enabled": true
+          "enabled": false
         },
         {
           "label": "Threads",
           "url": "https://www.threads.com/@voidtricknet",
           "icon": "ri-threads-fill",
           "external": true,
-          "enabled": true
+          "enabled": false
         },
         {
           "label": "Reddit",
@@ -84,7 +84,7 @@
           "url": "https://voidtrick.itch.io",
           "icon": "ri-gamepad-fill",
           "external": true,
-          "enabled": false
+          "enabled": true
         },
         {
           "label": "Gumroad",
@@ -124,7 +124,7 @@
           "url": "https://discord.gg/u4WWU3WE",
           "icon": "ri-discord-fill",
           "external": true,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
