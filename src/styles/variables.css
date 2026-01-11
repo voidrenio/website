@@ -46,6 +46,9 @@
     --clr-warning: var(--clr-yellow);
     --clr-error: var(--clr-red);
 
+    --clr-box-shadow-0: rgba(0, 0, 0, 0.24);
+    --clr-box-shadow-1: rgba(0, 0, 0, 0.23);
+
     /*** Gradients ***/
     --clr-primary-gradient: rgba(138, 173, 244, 0.2);
     --clr-tertiary-gradient: rgba(198, 160, 246, 0.2);
@@ -110,6 +113,9 @@
     --clr-success: var(--clr-green);
     --clr-warning: var(--clr-yellow);
     --clr-error: var(--clr-red);
+
+    --clr-box-shadow-0: rgba(0, 0, 0, 0.05);
+    --clr-box-shadow-1: rgba(0, 0, 0, 0.05);
 
     /*** Gradients ***/
     --clr-primary-gradient: rgba(30, 102, 245, 0.2);
