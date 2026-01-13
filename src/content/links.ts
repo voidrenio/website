@@ -145,14 +145,14 @@ export const linkGroups = [
         url: env.LINK_KOFI,
         icon: 'ri-heart-3-fill',
         external: true,
-        enabled: true,
+        enabled: false,
       },
       {
         label: 'Buy Me a Coffee',
         url: env.LINK_BUYMEACOFFEE,
         icon: 'ri-cup-fill',
         external: true,
-        enabled: true,
+        enabled: false,
       },
       {
         label: 'Liberapay',
