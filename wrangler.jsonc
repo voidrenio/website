@@ -1,6 +1,6 @@
 {
 	"main": "dist/_worker.js/index.js",
-	"name": "voidtrick-website",
+	"name": "website",
   "compatibility_date": "2026-01-09",
   "compatibility_flags": [
     "nodejs_compat",
