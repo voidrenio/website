@@ -5,9 +5,35 @@
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
     "binding": "ASSETS",
-    "directory": "./dist"
+    "directory": "./dist",
   },
   "observability": {
-    "enabled": true
-  }
+    "enabled": true,
+  },
+  "routes": [
+    {
+      "pattern": "voidren.com",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "www.voidren.com",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "voidren.net",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "www.voidren.net",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "voidren.io",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "www.voidren.io",
+      "custom_domain": true,
+    },
+  ],
 }
