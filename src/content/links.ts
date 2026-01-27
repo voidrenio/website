@@ -107,6 +107,14 @@ export const linkGroups = [
         external: true,
         enabled: true,
       },
+      ,
+      {
+        label: "Voidren's Git",
+        url: env.LINK_VOIDREN_GIT,
+        icon: 'ri-git-repository-line',
+        external: true,
+        enabled: true,
+      },
       {
         label: 'Github',
         url: env.LINK_GITHUB,

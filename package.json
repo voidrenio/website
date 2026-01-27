@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@astrojs/svelte": "^7.2.5",
-    "astro": "^5.16.7",
+    "astro": "^5.16.15",
     "remixicon": "^4.8.0",
     "sass": "^1.97.2",
     "svelte": "^5.46.3",

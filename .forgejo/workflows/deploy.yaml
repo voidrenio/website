@@ -19,13 +19,14 @@ jobs:
       - name: Create .env file
         run: |
           cat << EOF > .env
+          LINK_ITCHIO=${{ secrets.LINK_ITCHIO }}
+          LINK_CODEBERG=${{ secrets.LINK_CODEBERG }}
+          LINK_VOIDREN_GIT=${{ secrets.LINK_VOIDREN_GIT }}
           LINK_GITHUB=${{ secrets.LINK_GITHUB }}
           LINK_YOUTUBE=${{ secrets.LINK_YOUTUBE }}
           LINK_TWITTER=${{ secrets.LINK_TWITTER }}
           LINK_MASTODON=${{ secrets.LINK_MASTODON }}
           LINK_DISCORD=${{ secrets.LINK_DISCORD }}
-          LINK_CODEBERG=${{ secrets.LINK_CODEBERG }}
-          LINK_ITCHIO=${{ secrets.LINK_ITCHIO }}
           # Add all your other links here
           EOF
 
