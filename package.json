@@ -9,7 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/svelte": "^7.2.5",
     "astro": "^5.16.7",
     "remixicon": "^4.8.0",
